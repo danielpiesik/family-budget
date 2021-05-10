@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+  family-budget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: budgeter
+    container_name: budgeter
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./budgeter:/app
+    ports:
+      - "8000:8000"
