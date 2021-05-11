@@ -1,4 +1,4 @@
--   model: auth.user
+-   model: users.user
     pk: 1
     fields:
         password: pbkdf2_sha256$260000$8wQEti0e0n5ziiyfvR5sEw$BIJNy0BTKQeVPm+jFUkw/5yrTA9We301XdT84hyC/Fc=  # pass

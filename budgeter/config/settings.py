@@ -19,6 +19,9 @@ INSTALLED_APPS = [
 
     # third party applications
     'rest_framework',
+
+    # internal applications
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -74,5 +77,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.User'
 
 FIXTURE_DIRS = ['fixtures']
