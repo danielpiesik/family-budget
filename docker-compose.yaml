@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
 
-  family-budget:
+  budgeter:
     build:
       context: .
       dockerfile: Dockerfile
